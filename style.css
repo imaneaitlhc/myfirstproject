@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap'); 
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: rgb(155, 73, 48);
+  font-weight: bold;
+  font-family: Roboto Mono;
+  background-color: #e9cd90;  
+  padding: 20px;
+  display: flex; /*  to create a flex container */
+  justify-content: center; /* justify-content to define the horizontal alignment of items. */
+}
+
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+a {
+  color: rgb(155, 73, 48);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+.login {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.subscribe {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.signup {
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.header-container {
+  background-color: #f5deae;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  /*to define the vertical alignment of items.*/
+}
+
+.social {
+  align-self: flex-end; /*align-items to define the vertical alignment of items*/
+  margin-bottom: 20px;
+}
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(155, 73, 48);
+}
+
+.photo-grid {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /*flex-wrap property forces items that don’t fit to get bumped down to the next row*/
+}
+
+.photo-grid-item {
+  width: 200px;
+  height: 200px;
+  border: 0.3em solid rgb(255, 255, 255);
+  border-radius: 1em;
+  box-shadow: 0 20px 40px black;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5
+ {
+  width: 200px;
+  height: 200px;
+  border-radius: 1em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-item {
+  text-align: center;
+  font-family: Roboto Mono;
+  color: rgb(155, 73, 48);
+  font-style: inherit;
+  font-weight: bold;
+  font-size: medium;
+  padding: 50px;
+  border: 1px solid white;
+  background-color: #e9cd90;
+  height: 100px;
+  flex: 1;/* this line tells the items to stretch to match the width of .footer*/ 
+  /* it's a shorthand of : 
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0; 
+  */
+  
+}
+
+.footer-two {
+  flex: 2; /*can make the second item grow twice as fast as the other two*/
+}
+
+.footer-one,
+.footer-three {
+  background-color: #cfb16f;
+  flex: initial; /* this line makes the center item flexible, but the ones on either side are always the same size*/
+  width: 300px;
+}
+

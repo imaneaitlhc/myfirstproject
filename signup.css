@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap'); 
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto Mono;
+  background-color: rgb(155, 73, 48);
+  color: black;
+}
+
+.login-box {
+  width: 500px;
+  position: absolute; /* postulat de départ */
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  border: 2px solid white;
+  background-color: rgb(155, 73, 48);
+  text-align: center;
+  border-radius: 1em;
+  box-shadow: 0 20px 40px black;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500, bold;
+  background: none;
+}
+
+input 
+ {
+  position: relative;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  padding: 14px 10px;
+  width: 70%; 
+  font-weight: bold;
+  background-color: #c4ab76;
+  border: 2px solid grey;
+  border-radius: 1em;
+  box-shadow: 0 20px 40px black;
+  box-sizing: border-box;
+}
+.email,
+.password,
+.submit {
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  
+}
+
